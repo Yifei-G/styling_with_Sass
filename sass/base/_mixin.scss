@@ -1,0 +1,5 @@
+
+@mixin content-amplify($value){
+	-webkit-transform: scale($value);
+	        transform: scale($value);
+}

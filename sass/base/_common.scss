@@ -1,0 +1,28 @@
+
+%menu-style{
+		padding: $no-padding;
+	 	list-style-type: none;
+	 	display: inline-flex;
+		width: $full-width;
+     	justify-content: space-around;
+}
+
+%menu-list-style{
+	font-family: $text-font;
+	text-align:center;
+	width: $horizontal-menu-item-width;
+	border:$horizontal-menu-item-border;
+	border-radius: $border-radius;
+	padding: $horizontal-menu-item-padding;
+}
+
+%link-style{
+	color:$component-text-color;
+	text-decoration: none;
+}
+
+%menu-hover-effect{
+	transition: all 0.9s ease-out;
+	width: $horizontal-menu-item-width * 1.2;
+	background-color: $component-primary-color;
+}

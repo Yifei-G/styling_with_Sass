@@ -1,0 +1,40 @@
+.subcontent{
+	margin:$subcontent-section-margin;
+	.wrapper{
+		@extend %menu-style;
+		section{
+			width:$subcontent-container-width;
+			margin:$subcontent-section-margin;
+			h3{
+				margin-bottom: $no-margin;
+			}
+			a{
+				@extend %link-style;
+				color:$subsection-primary-color;
+			}
+			ul{
+				@extend %menu-style;
+				flex-direction: column;
+				margin-top:$no-margin;
+				li{
+					padding:$subcontent-list-padding;
+					border-bottom:1px dashed $component-text-color;
+				}
+			}
+
+			address{
+				margin:6% 0 6% 0;
+			}
+
+			dl{
+				dt{
+					color:$subsection-primary-color;
+				}
+				dd{
+					margin-left: 0;
+				}
+			}
+		}
+		
+	}	
+}

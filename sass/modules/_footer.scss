@@ -1,0 +1,26 @@
+footer{
+	background-color: $header-background-color;
+	nav{
+		ul{
+			@extend %menu-style;
+			li{
+				@extend %menu-list-style;
+
+				a{
+					@extend %link-style;
+				}
+			}
+			& li:hover{
+				@extend %menu-hover-effect;
+				a{
+					color:$component-secondary-color;
+				}
+			}
+		}
+	}
+
+	.copy{
+		text-align: center;
+	}	
+
+}

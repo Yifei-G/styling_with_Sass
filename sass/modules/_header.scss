@@ -1,0 +1,37 @@
+header{
+	font-family: $title-font;
+	background-color: $header-background-color;
+	&:hover{
+		background-color: darken($header-background-color,2%);
+	}
+
+	h1{
+		font-size: $title-font-size;
+		margin: $title-margin;
+	}
+
+	nav{
+		ul{
+			@extend %menu-style;
+			
+     		margin-top:$horizontal-menu-top-margin;
+			li{
+				@extend %menu-list-style;
+
+				a{
+					@extend %link-style;
+				}
+			}
+			& li:hover{
+				@extend %menu-hover-effect;
+				a{
+					color:$component-secondary-color;
+				}
+			}
+			
+		}
+	}	
+}
+
+
+

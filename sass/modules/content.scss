@@ -1,0 +1,54 @@
+.content{
+	background-color: $content-background-color;
+	h1{
+		padding: $content-title-padding;
+		margin:  $content-title-margin;
+	}
+	form{
+			float: right;
+			margin: $search-bar-margin ;
+		input{
+				outline: 0;
+				border-width: 0 0 $border-width;
+				width:$simple-input-width;
+				background-color: $no-background-color;
+				transition: border-color 1s ease-out;
+			&:focus{
+					border-color:$component-primary-color;
+			}
+		}
+		button{
+			position:relative;
+			border:1px solid $component-text-color;
+			width: 4rem;
+			border-radius:$border-radius;
+			background-color:$component-primary-color;
+			&:hover{
+				background-color: darken($component-primary-color, 5%);
+			}
+			&:active{
+				top: 2px;
+			}
+			&:active,&:focus{
+				outline-style: none;
+			}
+		}
+	}
+	ul{
+		@extend %menu-style;
+		flex-wrap: wrap;
+		li{
+			display:inline-block;
+			border: 8px solid darken(#EB7470,0.5%);
+			border-radius: $border-radius;
+			margin: 0 2.5% 2.5% 2.5%;
+			footer{
+				text-align: center;
+			}
+			&:hover{
+				@include content-amplify(1.1);
+			}
+		}
+	}
+}
+
